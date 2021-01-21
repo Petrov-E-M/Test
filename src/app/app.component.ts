@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Test';
+  elements: any = ['Mark', 'Jack', 'Pirate'];
+
+  addItem(newItem: string) {
+    this.elements.push(newItem);
+  }
 }
